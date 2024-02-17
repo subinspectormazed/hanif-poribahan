@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanif Poribahan</title>
+
+    <!-- install daisy UI and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container mx-auto px-4">
+    <header class="mt-10">
+      <!-- nav section start -->
+      <nav class="font font-raleway">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#030712b3 ]"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <h2 class="font-extrabold text-4xl text-[#030712]">Hanif-Ticket</h2>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#030712b3 gap-6 ]">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-[#1dd1001a] border-[#1dd10066] text-[#1DD100] px-7 py-4"
+              >Bus <img src="./images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <div>
+        <!-- banner image -->
+        <div
+          class="hero h-[550px] rounded-3xl mt-8"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-content text-center">
+            <div class="max-w-2xl">
+              <h1 class="mb-5 text-6xl font-bold font-raleway text-white">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">Hanif Paribahan</span>
+              </h1>
+              <p class="mb-5 font-inter text-white">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button
+                class="btn btn-primary bg-[#1DD100] border-none text-[#030712] px-7 mt-7 font-raleway font-bold"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="flex justify-around px-10 -mt-14">
+          <div
+            class="border-b-4 border-[#1DD100] w-72 h-28 rounded-2xl bg-white flex gap-6 items-center justify-center"
+          >
+            <div>
+              <img src="./images/people.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter font-bold text-4xl text-[#030712]">
+                500K+
+              </h2>
+              <p class="font-inter text-gray-600">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="border-b-4 border-[#1DD100] w-72 h-28 rounded-2xl bg-white flex gap-6 items-center justify-center"
+          >
+            <div>
+              <img src="./images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter font-bold text-4xl text-[#030712]">
+                1.7 lacks
+              </h2>
+              <p class="font-inter text-gray-600">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="border-b-4 border-[#1DD100] w-72 h-28 rounded-2xl bg-white flex gap-6 items-center justify-center"
+          >
+            <div>
+              <img src="./images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-inter font-bold text-4xl text-[#030712]">80K+</h2>
+              <p class="font-inter text-gray-600">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!-- Java Scripts link -->
+    <script src="./scripts/hanif.js"></script>
+    <script src="./scripts/utiltiy.js"></script>
+  </body>
+</html>
