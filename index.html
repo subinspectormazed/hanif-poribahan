@@ -244,7 +244,7 @@
               <!-- reduce seats -->
               <div class="flex gap-3">
                 <button class="btn border-2 border-[#1DD100] text-[#1DD100]">
-                  <img src="./images/seat-green.png" alt="" />40 Seats left
+                  <img src="./images/seat-green.png" alt="" /><span id="seats-left">40</span> Seats left
                 </button>
               </div>
             </div>
@@ -356,31 +356,14 @@
                         <!-- head -->
                         <thead>
                           <tr>
-                            <th class="font-inter font-black">Seat</th>
+                            <th class=" flex gap-3 font-inter font-black">Seat
+                              <div id="seat-count" class="bg-[#1DD100] px-3 rounded-xl text-white">0</div>
+                            </th>
                             <th class="font-inter font-black">Class</th>
                             <th class="font-inter font-black">Price</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <!-- row 1 -->
-                          <tr>
-                            <td>A1</td>
-                            <td>Economoy</td>
-                            <td>550</td>
-                          </tr>
-                          <!-- row 2 -->
-                          <tr>
-                            <td>A1</td>
-                            <td>Economoy</td>
-                            <td>550</td>
-                          </tr>
-                          <!-- row 3 -->
-                          <tr>
-                            <td>A1</td>
-                            <td>Economoy</td>
-                            <td>550</td>
-                          </tr>
-                        </tbody>
+                        <tbody id="selected-seat-container"></tbody>
                       </table>
                       <!-- total price start -->
                       <div>
@@ -388,9 +371,9 @@
                         <div>
                           <table class="table">
                             <thead>
-                              <tr class="flex justify-between">
+                              <tr class="flex justify-between text-black">
                                 <th class="flex-auto w-[65%]">Total Price</th>
-                                <th class="flex-auto w-[35%]">BDT 550</th>
+                                <th class="flex-auto w-[25%]">BDT <span id="total-price" >550</span></th>
                               </tr>
                             </thead>
                           </table>
@@ -402,14 +385,14 @@
                      <!-- input filed -->
               <div class="">
                 <input type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs" />
-                <button class="btn -ml-20 bg-[#1DD100] px-6 text-white"> Apply </button>
+                <button id="apply-btn" class="btn -ml-20 bg-[#1DD100] px-6 text-white"> Apply </button>
               </div>
               <div>
                 <table class="table ">
                   <thead>
                     <tr class="flex justify-between text-black">
                       <th class="flex-auto w-[65%]">Grand Total</th>
-                      <th class="flex-auto w-[35%]">BDT 550</th>
+                      <th class="flex-auto w-[25%]">BDT <span id="grand-total">550</span></th>
                     </tr>
                   </thead>
                 </table>
